@@ -3,9 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sign-Up Page</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="app.js" defer></script>
 </head>
 <body>
 	<div id="sidebar-div"></div>
-	<div id="sign-up-section"></div>
+	<form id="signup-form" onsubmit="return verifyPassword()">
+		<label for="fname">First Name*
+		<input type="text" id="fname" name="fname">
+		</label>
+		<label for="lname">Last Name*
+		<input type="text" id="lname" name="lname">
+		</label>
+		<label for="email">E-Mail*
+		<input type="email" id="email" name="email">
+		</label>
+		<label for="pn">Phone Number*
+		<input type="tel" id="pn" name="pn" patern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$">
+		</label>
+		<label for="pw">Password*
+		<input type="password" id="pw" name="pw">
+		</label>
+		<label for="pwcf">Confirm Password*
+		<input type="password" id="pwcf" name="pwcf">
+		</label>
+		<p id="error-text"></p>
+		<input id="submit-button" type="submit" value="submit">
+	</form>
+	</div>
 </body>
 </html>

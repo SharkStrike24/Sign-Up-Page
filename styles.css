@@ -1,0 +1,28 @@
+#sidebar-div{
+	background-color: red;
+}
+
+#signup-form{
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 325px;
+	display: grid;
+	grid-template: 75px 75px 75px 50px/150px 150px;
+	column-gap: 25px;
+}
+
+#submit-button{
+	height: 50px;
+}
+
+#signup-form > label > input{
+	width: 150px;
+}
+
+#error-text{
+	color: red;	
+	height:50px;
+}
+
